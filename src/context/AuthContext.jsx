@@ -9,8 +9,6 @@ export const AuthProvider = ({ children }) => {
   const [authState, setAuthState] = useState();
   const [loading, setLoading] = useState(true);
 
-  const axiosInstance = axios.create();
-
   axios.defaults.baseURL = import.meta.env.VITE_API_URL;
 
   /* Axe d'amélioration, stocker le token de manière sécurisé et ne peut rappeler la route login à chaque fois */
@@ -32,7 +30,7 @@ export const AuthProvider = ({ children }) => {
     };
 
     login();
-  }, [axiosInstance.defaults.headers.common]);
+  }, []);
 
   return (
     <AuthContext.Provider value={{ authState, setAuthState }}>

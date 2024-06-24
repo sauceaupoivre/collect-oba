@@ -1,8 +1,19 @@
-# React + Vite
+# COLLECT-OBA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Test de récuperation des offres d'emplois depuis l'API de jobijoba
 
-Currently, two official plugins are available:
+#### Pré-requis
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Node.JS
+
+Pour lancer l'application
+
+- Copier le fichier .env.example vers .env.local
+- Renseigner le client_id et client_secret
+
+#### Puis dans dans un terminal :
+
+```bash
+npm install
+npm run dev
+```
